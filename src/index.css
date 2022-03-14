@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply bg-[#051a2e] h-screen w-screen text-slate-100 p-4;
+}
+
+.main {
+  @apply h-[95%] grid place-content-center;
+}
+
+.card-mobile {
+  @apply grid justify-center items-center w-[20rem] h-[18rem];
+}
+.card {
+  @apply bg-gray-800 border-gray-200 shadow-md text-xl text-center 
+  p-3 rounded-2xl sm:w-[26rem] sm:h-[13rem] font-semibold;
+}
+
+.button-container {
+  @apply flex justify-center items-end;
+}
+
+.button {
+  @apply bg-cyan-800 hover:bg-cyan-900 active:animate-bounce
+  focus:ring-4 focus:ring-cyan-500 text-white p-2 rounded-full w-[15rem];
+}
