@@ -1,15 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import HomeScreen from "./screens/HomeScreen";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomeScreen />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
